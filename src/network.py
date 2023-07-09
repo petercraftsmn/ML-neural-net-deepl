@@ -9,7 +9,7 @@ simple, easily readable, and easily modifiable.  It is not optimized,
 and omits many desirable features.
 """
 
-#### Libraries
+# Libraries
 # Standard library
 import random
 
@@ -130,7 +130,7 @@ class Network(object):
         return sum(int(x == y) for (x, y) in test_results)
 
 
-#### Miscellaneous functions
+# Miscellaneous functions
 def sigmoid(z):
     """The sigmoid function."""
     return 1.0 / (1.0 + np.exp(-z))
@@ -142,6 +142,6 @@ def sigmoid_prime(z):
 
 
 def cost_derivative(output_activations, y):
-    """Return the vector of partial derivatives \partial C_x /
-    \partial a for the output activations."""
+    """Return the vector of partial derivatives
+    partial C_x partial a for the output activations."""
     return output_activations - y
