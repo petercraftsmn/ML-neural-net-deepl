@@ -4,15 +4,15 @@ from src.network import Network
 def main():
     sizes = [2, 3, 1]
     network = Network(sizes)
-    print("num_layers")
-    print(network.num_layers)
-    print("sizes")
-    print(sizes[1:])
-    print(network.sizes)
-    print("biases")
-    print(network.biases)
-    print("weight")
-    print(network.weights)
+    print("num_layers =", network.num_layers)
+    print("sizes =", sizes)
+    print("sizes[1:] =", sizes[1:])
+    print("sizes[:-1] =", sizes[:-1])
+    print("biases =", network.biases)
+    print("biases = [np.random.randn(y, 1) for y in sizes[1:]] ->", [(y, 1) for y in sizes[1:]])
+    print("weight =", network.weights)
+    print("weights = [(y, x) for x, y in zip(sizes[:-1], sizes[1:])] ->",
+          [(y, x) for x, y in zip(sizes[:-1], sizes[1:])])
 
 
 if __name__ == "__main__":
