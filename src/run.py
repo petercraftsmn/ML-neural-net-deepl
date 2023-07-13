@@ -13,6 +13,7 @@ def main():
     print("weight =", network.weights)
     print("weights = [(y, x) for x, y in zip(sizes[:-1], sizes[1:])] ->",
           [(y, x) for x, y in zip(sizes[:-1], sizes[1:])])
+    print("b, w in zip(network.biases, network.weights) =", list(zip(network.biases, network.weights)))
 
 
 if __name__ == "__main__":

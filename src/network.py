@@ -19,6 +19,9 @@ from joblib.numpy_pickle_utils import xrange
 
 
 class Network(object):
+    """
+    Represents neural network class.
+    """
 
     def __init__(self, sizes):
         """The list ``sizes`` contains the number of neurons in the
