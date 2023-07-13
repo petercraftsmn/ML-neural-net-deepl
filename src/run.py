@@ -1,4 +1,4 @@
-from src.network import Network
+from src.pk_network import Network
 
 
 def main():
