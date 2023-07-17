@@ -117,7 +117,7 @@ net.SGD(training_data, 30, 10, 0.1,
         You may also want to grab the proper NVidia driver, choose it form there:
         System Settings > Software & Updates > Additional Drivers.
     3) should work, run it with:
-        THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python3.5 test.py
+        THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python3.5 network_test.py
         http://deeplearning.net/software/theano/tutorial/using_gpu.html
     4) Optionally, you can add cuDNN support from:
         https://developer.nvidia.com/cudnn
